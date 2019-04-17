@@ -664,7 +664,7 @@ describe('RevokeHandler integration', function() {
       var model = {
         getClient: function() {},
         revokeToken: function() {},
-        getRefreshToken: function(refreshToken, callback) {
+        getRefreshToken: function(refreshToken, id, callback) {
           callback(null, token);
         },
         getAccessToken: function() {}
